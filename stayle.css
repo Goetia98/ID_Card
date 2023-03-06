@@ -1,0 +1,141 @@
+/* Stili di base */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Stili per la versione desktop */
+
+@media (min-width: 768px) {
+  body {
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    width: 600px;
+    padding: 50px;
+    margin-top: 50px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card img {
+    width: 150px;
+    height: auto;
+  }
+
+  .card-info {
+    flex-grow: 1;
+    margin-left: 50px;
+  }
+
+  .card-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .card-info p {
+    margin-bottom: 0;
+  }
+
+  .card-info ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .card-info li {
+    margin-bottom: 5px;
+  }
+
+  .card-info li strong {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+  }
+
+  .card-info li span {
+    display: inline-block;
+    width: calc(100% - 120px);
+  }
+}
+
+/* Stili per la versione mobile */
+
+@media (max-width: 767px) {
+  body {
+    background-color: #fff;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card {
+    display: block;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-info {
+    margin-top: 20px;
+  }
+
+  .card-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .card-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .card-info li {
+    margin-bottom: 10px;
+  }
+
+  .card-info li strong {
+    display: block;
+    font-weight: bold;
+  }
+
+  .card-info li span {
+    display: block;
+  }
+}
